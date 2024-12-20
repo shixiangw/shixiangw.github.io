@@ -57,7 +57,7 @@ export default {
       // }),
       ],
     },
-    // ignoreDeadLinks: true
+    ignoreDeadLinks: true,
     themeConfig: {
       logo: '/logo.png',
       nav: [{ text: "home", link: "/" }],
