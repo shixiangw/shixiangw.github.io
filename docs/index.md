@@ -1,6 +1,6 @@
 # Wellcome to shixiangw's blog
 
-[[toc]]
+
 
 ## 1. [About Me](/about)
 ## 2. [My Projects](/projects)
