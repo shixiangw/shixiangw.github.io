@@ -1,5 +1,6 @@
 // `.vitepress/config.js`
 import { withSidebar } from 'vitepress-sidebar';
+import { defineConfig } from 'vitepress'
 
 const vitePressOptions = {
   title: 'shixiangw',
@@ -23,7 +24,7 @@ const vitePressOptions = {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/shixiangw' }
     ],
-  }
+  },
 };
 
 const vitePressSidebarOptions = {
@@ -33,8 +34,8 @@ const vitePressSidebarOptions = {
   capitalizeFirst: true,
   useTitleFromFileHeading: true,
   excludePattern: [
-    'public/'
-  ]
+    'public/',
+  ],
 };
 
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions));
