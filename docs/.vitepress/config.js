@@ -35,6 +35,7 @@ const vitePressSidebarOptions = {
   useTitleFromFileHeading: true,
   excludePattern: [
     'public/',
+    'assets/',
   ],
 };
 
