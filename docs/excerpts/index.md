@@ -1,6 +1,6 @@
 # excerpt-articles
 
 
-## 1. [About Me](/about)
-## 2. [My Projects](/projects)
-## 3. [My Articles](/articles)
+## 1. About Me
+## 2. My Projects
+## 3. My Articles

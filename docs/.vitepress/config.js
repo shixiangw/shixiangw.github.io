@@ -2,23 +2,23 @@ import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress-sidebar.cdget.com/zhHans/introduction
 const vitepressSidebarOptions = [
-    // {
-    //   documentRootPath: "docs",
-    //   scanStartPath: "excerpts",
-    //   resolvePath: "/excerpts/",
-    //   useTitleFromFileHeading: true,
-    //   includeFolderIndexFile: true,
-    //   useTitleFromFrontmatter: true,
-    //   collapsed: true,
-    // },
-    // {
-    //   documentRootPath: "docs",
-    //   scanStartPath: "original-articles",
-    //   resolvePath: "/original-articles/",
-    //   useTitleFromFileHeading: true,
-    //   useTitleFromFrontmatter: true,
-    //   collapsed: true,
-    // },
+    {
+      documentRootPath: "docs",
+      scanStartPath: "excerpts",
+      resolvePath: "/excerpts/",
+      useTitleFromFileHeading: true,
+      includeFolderIndexFile: true,
+      useTitleFromFrontmatter: true,
+      collapsed: true,
+    },
+    {
+      documentRootPath: "docs",
+      scanStartPath: "original-articles",
+      resolvePath: "/original-articles/",
+      useTitleFromFileHeading: true,
+      useTitleFromFrontmatter: true,
+      collapsed: true,
+    },
     {
       documentRootPath: "docs",
       scanStartPath: "verified-articles",
