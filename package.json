@@ -5,7 +5,8 @@
       "docs:preview": "vitepress preview docs"
     },
     "devDependencies": {
-      "vitepress": "latest"
+      "vitepress": "latest",
+      "vitepress-sidebar": "^1.30.2"
     }
   }
   
