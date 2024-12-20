@@ -7,5 +7,6 @@ export default {
             dark: 'dracula-soft',
             light: 'github-dark',
         }
-    }
+    },
+    ignoreDeadLinks: true
   }
