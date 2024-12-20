@@ -44,9 +44,11 @@ feature分支在申请合并之前，最好是先pull一下主分支develop，�
 
 ### 分支和标签简化规则
 
+如果不是通过 feature/hotfix 等分支 merge 的方式提交代码， 而是麻烦 github fork 后， pr 的方式， 可以简化分支与标签的规则
+
 #### 简化分支
- - develop: 主分支， 用于最新的功能开发
- - release/`^\d+\.\d+$`: 发布分支，用于发布新版本， 如: release/1.2, release/2.0 等等
+ - develop: 主分支， 用于最新的功能开发， 有分支保护， 必须提 pr， review 后才能由 maintainer 合入
+ - release/`^\d+\.\d+$`: 发布分支，用于发布新版本， 如: release/1.2, release/2.0 等等， 有分支保护， 必须提 pr， review 后才能由 maintainer 合入
  - custom/[customer_name]: 客户分支，用于客户开发，如：custom/alibaba, custom/tencent 等等, 一般是从 release 分支切出来的 
 
   > 注意：无需创建 fix 分支 和 release/`^\d+\.\d+\.\d+$`,  
