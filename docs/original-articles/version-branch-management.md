@@ -44,7 +44,7 @@ feature分支在申请合并之前，最好是先pull一下主分支develop，�
 
 ## 分支和标签简化规则
 
-如果不是通过 feature/hotfix 等分支 merge 的方式提交代码， 而是麻烦 github fork 后， pr 的方式， 可以简化分支与标签的规则
+如果不是通过 feature/hotfix 等分支 merge 的方式提交代码， 而是类似 github fork 后，提 pr 的方式提交代码， 可以简化分支与标签的规则
 
 ### 简化分支
  - develop: 主分支， 用于最新的功能开发， 有分支保护， 必须提 pr， review 后才能由 maintainer 合入
