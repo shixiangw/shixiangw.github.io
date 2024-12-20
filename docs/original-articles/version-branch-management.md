@@ -51,9 +51,7 @@ feature分支在申请合并之前，最好是先pull一下主分支develop，�
  - release/`^\d+\.\d+$`: 发布分支，用于发布新版本， 如: release/1.2, release/2.0 等等， 有分支保护， 必须提 pr， review 后才能由 maintainer 合入
  - custom/[customer_name]: 客户分支，用于客户开发，如：custom/alibaba, custom/tencent 等等, 一般是从 release 分支切出来的 
 
-  > 注意：无需创建 fix 分支 和 release/`^\d+\.\d+\.\d+$`,  
-  因为 fix 版本和 release/1.2.x 版本都是在 release/1.2 上进行的， 
-  所以无需创建， 只需要在对应 commit 上有标签即可
+  > 注意：无需创建 fix 分支 和 release/`^\d+\.\d+\.\d+$`, 因为 x.y.z 版本的 fix 内容和 release/x.y.z 版本的内容都是在 release/x.y 分支上进行的，所以无需创建 release/x.y.z 分支， 只需要将其对应的 commit 提交到 release/x.y 分支即可, 后续阶段版本(fix 版本)即 x.y.z 的 tag 都是在 release/x.y 分支上创建的
 
 ### 简化标签
  - `^\d+\.\d+\.\d+(-(alpha|beta|rc)(\.\d+)?)?$`: 版本标签， 如：1.2.3, 1.2.3-alpha.1, 1.2.3-beta.2, 1.2.3-rc.3 等等
