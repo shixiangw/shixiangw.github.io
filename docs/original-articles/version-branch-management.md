@@ -54,6 +54,9 @@ feature分支在申请合并之前，最好是先pull一下主分支develop，�
   > 注意：无需创建 fix 分支 和 release/`^\d+\.\d+\.\d+$`, 因为 x.y.z 版本的 fix 内容和 release/x.y.z 版本的内容都是在 release/x.y 分支上进行的，所以无需创建 release/x.y.z 分支， 只需要将其对应的 commit 提交到 release/x.y 分支即可, 后续阶段版本(fix 版本)即 x.y.z 的 tag 都是在 release/x.y 分支上创建的
 
 ### 简化标签
+
+简化的标签规范类似 Golang采用的方式， 使用 major.minor.patch 的格式，例如 1.18.3 。
+
  - `^\d+\.\d+\.\d+(-(alpha|beta|rc)(\.\d+)?)?$`: 版本标签， 如：1.2.3, 1.2.3-alpha.1, 1.2.3-beta.2, 1.2.3-rc.3 等等
  - RC 版本只有在发布像 2.0.0 3.0.0 这样的主版本的时候，才会创建， 如： 2.0.0-rc.1 3.0.0-rc.1 等等
  - 主版本号只有在像架构变化等场景(强不兼容)才会更新， 如： 1.x -> 2.x 应该是完全不兼容的
